@@ -3,7 +3,7 @@
 %%% and return the area. The images here are extracted from a folder so
 %%% there are extra inputs to accommodate for the directory
 
-% took out treatment and magnification
+
 function areas = colorAreaCalculator(NumberOfImages, thresholdFunction, proliferation , nonproliferation, show, start)
 
 
@@ -37,6 +37,7 @@ if ~isfolder(inFolder)
     end
 end
 
+%change file paths per personal use
 outFolder = 'folder path';
 if ~isfolder(outFolder)
     errorMessage = sprintf('Error: folder DNE');

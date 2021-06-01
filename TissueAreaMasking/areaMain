@@ -17,6 +17,9 @@ areas = colorAreaCalculator(1, @totalTissueAreaMask, @proliferationMask , @nonPr
 %tissueName = getTissueNameCol(string);
 
 % output results into excel sheet
-filename = 'prolifVSnonProlif_results_MissingData.xlsx';
-%writematrix(tissueName, filename, 'Sheet', 1, 'Range', 'A2');
-%writematrix(areas,filename,'Sheet',1,'Range','B92');
+% following folder name must be created on desktop
+filename = 'FileName.xlsx';
+
+% column naming used in excel file
+ writematrix(tissueName, filename, 'Sheet', 1, 'Range', 'A2');
+ writematrix(areas,filename,'Sheet',1,'Range','B92');

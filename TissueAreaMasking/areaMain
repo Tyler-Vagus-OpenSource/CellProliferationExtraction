@@ -19,7 +19,3 @@ areas = colorAreaCalculator(1, @totalTissueAreaMask, @proliferationMask , @nonPr
 % output results into excel sheet
 % following folder name must be created on desktop
 filename = 'FileName.xlsx';
-
-% column naming used in excel file
- writematrix(tissueName, filename, 'Sheet', 1, 'Range', 'A2');
- writematrix(areas,filename,'Sheet',1,'Range','B92');
